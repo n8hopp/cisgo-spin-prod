@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'CISGOSPIN'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_30BAB305369949C08DEBB86FD070DFD2 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C716897F199542C181D8B3CB491D9D8A }}
           package: .
