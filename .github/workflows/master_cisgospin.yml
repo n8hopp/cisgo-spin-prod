@@ -27,9 +27,6 @@ jobs:
           npm run build --if-present
           npm run test --if-present
         
-      - name: Zip artifact for deployment
-        run: Compress-Archive . release.zip
-        
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
@@ -56,4 +53,4 @@ jobs:
           app-name: 'CISGOSPIN'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C716897F199542C181D8B3CB491D9D8A }}
-          package: release.zip
+          package: .
